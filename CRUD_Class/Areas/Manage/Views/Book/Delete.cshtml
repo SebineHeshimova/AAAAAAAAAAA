@@ -1,0 +1,26 @@
+﻿@model Book
+<div class="d-flex justify-content-between align-items-center container-fluid">
+    <h1>Delete a Book</h1>
+</div>
+<div class="container-fluid">
+    <form method="post" class="row">
+        <div class="mb-3 col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@Model.Code</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@Model.CostPrice</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@Model.SalePrice</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@Model.DiscountPercent</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@Model.Genre</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@Model.Tax</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@Model.SalePrice</h6>
+                    <p class="card-text">@Model.Description</p>
+                </div>
+            </div>
+            <button style="width: 100px" type="submit" class="btn btn-danger">Delete</button>
+            <a asp-controller="slider" asp-action="index" class="btn btn-primary">Back to home</a>
+        </div>
+
+    </form>
+</div>
